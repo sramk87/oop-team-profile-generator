@@ -236,3 +236,19 @@ when: ({ emplRole }) => {
 }
 ];
 
+function questionPrompts () {
+    return inquirer.prompt(questionsArr)
+}
+
+function teamCompletionPrompt
+
+const writeToFile = data => {
+    fs.writeToFile('./dist/index.html', data, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log('Your team profile has been created, you can find it in dist/index.html')
+        }
+    })
+};
